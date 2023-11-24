@@ -27,7 +27,12 @@ export default factories.createCoreController(
 
         if (body.isMedia) {
           const media = await MessageMedia.fromUrl(body.mensaje);
-          message = await ws.client.sendMessage(body.a, media);
+          message = await ws.client.sendMessage(body.a, media, {
+            sendAudioAsVoice: media.mimetype.includes("video") ? true : false,
+            sendMediaAsDocument: media.mimetype.includes("video")
+              ? true
+              : false,
+          });
         } else {
           message = await ws.client.sendMessage(body.a, body.mensaje);
         }

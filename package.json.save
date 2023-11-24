@@ -14,11 +14,11 @@
     "@strapi/plugin-users-permissions": "4.10.8",
     "@strapi/strapi": "4.10.8",
     "mysql": "2.18.1",
-    "mysql2": "^3.6.3",
+    "mysql2": "^3.6.2",
     "qrcode-terminal": "^0.12.0",
-    "strapi-plugin-entity-relationship-chart": "^4.14.6",
+    "strapi-plugin-entity-relationship-chart": "^4.1.0",
     "strapi-plugin-io": "^1.1.4",
-    "whatsapp-web.js": "^1.23.0"
+    "whatsapp-web.js": "^1.23.o"
   },
   "author": {
     "name": "A Strapi developer"
